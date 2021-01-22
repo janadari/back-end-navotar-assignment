@@ -67,7 +67,7 @@ DELIMITER ;
 <h4>for register </h4>
 curl --location --request POST 'http://127.0.0.1:9191/adduser/' \
 --header 'Content-Type: application/json' \
---data-raw '{"name":"janadari",
+--data-raw '{"name":"shehani",
 "country":"sri-lanka",
 "state":"b",
 "address":"abc",
@@ -80,5 +80,9 @@ curl --location --request POST 'http://127.0.0.1:9191/adduser/' \
 "email":"abc@gmail.com"}'
 
 <h5>for login </h5>
-curl --location --request GET 'http://127.0.0.1:9191/getuserbyname/janadari' \
+curl --location --request GET 'http://127.0.0.1:9191/getuserbyname/shehani' \
 --data-raw ''
+
+![image](https://user-images.githubusercontent.com/31371187/105444541-07c1f900-5c94-11eb-8ffd-e9225249075d.png)
+![image](https://user-images.githubusercontent.com/31371187/105445509-23c69a00-5c96-11eb-9226-83af4bd74d9b.png)
+
