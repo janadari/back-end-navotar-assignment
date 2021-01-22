@@ -1,6 +1,6 @@
 # back-end-navotar-assignment
 
-DB QUERIES:
+<h3>DB QUERIES:</h3>
 
 CREATE TABLE `navotardb`.`userdetail` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -16,7 +16,7 @@ CREATE TABLE `navotardb`.`userdetail` (
   `zipcode` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
-STORE PROCEDURE :
+<h3>STORE PROCEDURE :</h3>
 
 USE `navotardb`;
 DROP procedure IF EXISTS `USER_DETAIL`;
@@ -62,7 +62,9 @@ END$$
 
 DELIMITER ;
 
-POSTMAN APIs : 
+<h3>POSTMAN APIs : </h3>
+
+<h4>for register </h4>
 curl --location --request POST 'http://127.0.0.1:9191/adduser/' \
 --header 'Content-Type: application/json' \
 --data-raw '{"name":"janadari",
@@ -77,6 +79,6 @@ curl --location --request POST 'http://127.0.0.1:9191/adduser/' \
 "password2":"789456",
 "email":"abc@gmail.com"}'
 
-
+<h5>for login </h5>
 curl --location --request GET 'http://127.0.0.1:9191/getuserbyname/janadari' \
 --data-raw ''
