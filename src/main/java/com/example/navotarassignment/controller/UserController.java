@@ -18,11 +18,17 @@ public class UserController {
 	private LoginService service;
 	
 	@CrossOrigin(origins = "http://localhost:4200")
+//	@RequestMapping(value = "/adduser", method = RequestMethod.POST)
+//	public User addUser(@RequestBody User user) {
+//		return service.saveUser(user);
+//	}
+	
 	@RequestMapping(value = "/adduser", method = RequestMethod.POST)
-	public User addUser(@RequestBody User user) {
-		return service.saveUser(user);
+	public String addUser(@RequestBody User user) {
+		 service.saveUser(user);
+		 return "successfully added a new User : "+user.getName();
 	}
-//	
+	
 //	@RequestMapping(value = "/getuserbyid/{id}", method = RequestMethod.GET)
 //	public User findUserById(@PathVariable int id) {
 //		return service.getUserById(id);
